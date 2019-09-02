@@ -2,8 +2,8 @@
 
 ## MENU
 - [Usuário](#-usuario)
-- [Conectando](#-Conectando)
-- [Comandos](#-Comandos)
+- [Conectando](#-conectando)
+- [Comandos](#-comandos)
 ## Usuario
 
 :key: Gerenciando acesso
