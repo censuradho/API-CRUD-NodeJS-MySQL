@@ -29,10 +29,14 @@ Privilégios
 ```sql
 GRANT ALL PRIVILEGES ON * . * TO 'usuario'@'localhost';
 ```
+Depois de ja estar logado o banco.
 
-| USE - acessar uma tabela |
-| DESCRIBE - mostrar detalhes da tabela |
-| STATUS - mostra qual banco esta aberto |
+| *USE* - acessar uma tabela |
+
+| *DESCRIBE* - mostrar detalhes da tabela |
+
+| *STATUS* - mostra qual banco esta online |
+
 
 ## Conectando
 
