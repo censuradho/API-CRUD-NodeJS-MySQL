@@ -29,7 +29,7 @@ Privilégios
 ```sql
 GRANT ALL PRIVILEGES ON * . * TO 'usuario'@'localhost';
 ```
-Depois de ja estar logado o banco.
+Depois de já estar logado no banco.
 
 | *USE* - acessar uma tabela |
 
