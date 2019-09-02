@@ -2,11 +2,11 @@
 
 Esse repositório tem como finalidade servir de consulta para comandos [my-SQL](https://www.mysql.com/), com exemplos práticos.
   
-## MENU
+## Menu
 - [Usuário](#-usuario)
 - [Conectando](#-conectando)
 - [Comandos](#-comandos)
-## Usuario
+## Usuário
 
 :key: Gerenciando acesso
 
