@@ -1,5 +1,7 @@
 # Comandos mySQL  :whale:
 
+Esse repositório tem como finalidade servir de consulta de comandos [my-SQL](https://www.mysql.com/), com exemplos e comandos.
+  
 ## MENU
 - [Usuário](#-usuario)
 - [Conectando](#-conectando)
@@ -8,50 +10,55 @@
 
 :key: Gerenciando acesso
 
-- Criar usuário
-
+ Criar usuário
+```sql
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'senha';
+```
 
-- Alterar senha
-
+ Alterar senha
+```sql
 SET PASSWORD FOR user = PASSWORD('senha');
+```
 
-- Excluir usuário
-
+Excluir usuário
+```sql
 DROP USER 'user@localhost';
+```
 
-- Privilégios
-
+Privilégios
+```sql
 GRANT ALL PRIVILEGES ON * . * TO 'usuario'@'localhost';
+```
 
-
-USE - acessar uma tabela
-DESCRIBE - mostrar detalhes da tabela
-STATUS - mostra qual banco esta aberto
+| USE - acessar uma tabela |
+| DESCRIBE - mostrar detalhes da tabela |
+| STATUS - mostra qual banco esta aberto |
 
 ## Conectando
 
 > comando para se conectar ao banco de dados via terminal.
-
+```bash
 mysql -h localhost -u username -p password
-
+```
 
 ## Comandos
 
 > comandos básicos DDL ( Data Definition Language )
 
-CREATE DATABASE;
 
-SHOW DATABASES;
-
+Cria uma base de dados.
 ```sql
-  CREATE DATABASE pessoas
+  CREATE DATABASE pessoas;
+  
 ```
+ Mostra as bases de dados já criadas.
+```sql
+  SHOW DATABASES;
+```
+
 -----------------------------
 
-CREATE TABLE;
-
-SHOW TABLES;
+Cria uma tabela de dados.
 
 ```sql
 CREATE TABLE usuarios(
@@ -59,9 +66,14 @@ CREATE TABLE usuarios(
   password VARCHAR(18)
 );
 ```
--------------------------------
-INSERT INTO - criar dados na tabela
 
+Mostra as tabelas já criadas.
+```sql
+SHOW TABLES;
+```
+-------------------------------
+
+ Criar dados na tabela.
 ```sql
 INSERT INTO usuarios(username,password) VALUES(
   "Gustavo Leite", 
@@ -70,13 +82,21 @@ INSERT INTO usuarios(username,password) VALUES(
 ```
 -------------------------
 
-SELECT * FROM tabela - lista os dadosda tabela
+ Lista os dadosda tabela.
 
 ```sql 
 SELECT * FROM tabela WHERE username = gustavo;
  ```
 ---------------------------
 
-DELETE FROM usuarios WHERE username = gustavo;
+Deleta dados (NUNCA use um DELETE sem um WHERE)
+```sql
 
+DELETE FROM usuarios WHERE username = gustavo;
+```
+
+Atualizar dados
+
+```sql
 UPDATE usuarios SET nome = "novo nome" WHERE nome = "antigo nome";
+```
