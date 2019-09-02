@@ -1,4 +1,4 @@
-# Comandos mySQL
+# Comandos mySQL  :whale:
 
 ## MENU
 - [Usuário](#-usuario)
