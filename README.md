@@ -1,6 +1,6 @@
 # Comandos mySQL  :whale:
 
-Esse repositório tem como finalidade servir de consulta de comandos [my-SQL](https://www.mysql.com/), com exemplos e comandos.
+Esse repositório tem como finalidade servir de consulta para comandos [my-SQL](https://www.mysql.com/), com exemplos práticos.
   
 ## MENU
 - [Usuário](#-usuario)
