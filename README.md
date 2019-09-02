@@ -9,15 +9,19 @@
 :key: Gerenciando acesso
 
 - Criar usuário
+
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'senha';
 
 - Alterar senha
+
 SET PASSWORD FOR user = PASSWORD('senha');
 
 - Excluir usuário
+
 DROP USER 'user@localhost';
 
 - Privilégios
+
 GRANT ALL PRIVILEGES ON * . * TO 'usuario'@'localhost';
 
 
@@ -26,14 +30,18 @@ DESCRIBE - mostrar detalhes da tabela
 STATUS - mostra qual banco esta aberto
 
 ## Conectando
+
 > comando para se conectar ao banco de dados via terminal.
+
 mysql -h localhost -u username -p password
 
 
 ## Comandos
+
 > comandos básicos DDL ( Data Definition Language )
 
 CREATE DATABASE;
+
 SHOW DATABASES;
 
 ```sql
@@ -42,6 +50,7 @@ SHOW DATABASES;
 -----------------------------
 
 CREATE TABLE;
+
 SHOW TABLES;
 
 ```sql
@@ -52,6 +61,7 @@ CREATE TABLE usuarios(
 ```
 -------------------------------
 INSERT INTO - criar dados na tabela
+
 ```sql
 INSERT INTO usuarios(username,password) VALUES(
   "Gustavo Leite", 
