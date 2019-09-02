@@ -2,8 +2,8 @@
 
 ## MENU
 - [Usuário](#-usuario)
-- [conectando](#-Conectando)
-- [Comandos-Básicos] (#-Comandos)
+- [Conectando](#-Conectando)
+- [Comandos](#-Comandos)
 ## Usuario
 
 :key: Gerenciando acesso
@@ -25,11 +25,13 @@ USE - acessar uma tabela
 DESCRIBE - mostrar detalhes da tabela
 STATUS - mostra qual banco esta aberto
 
-## Conectando ao banco
+## Conectando
+> comando para se conectar ao banco de dados via terminal.
 mysql -h localhost -u username -p password
 
 
-## Comandos básicos DDL ( Data Definition Language )
+## Comandos
+> comandos básicos DDL ( Data Definition Language )
 
 CREATE DATABASE;
 SHOW DATABASES;
