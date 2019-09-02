@@ -49,12 +49,15 @@ mysql -h localhost -u username -p password
 
 > comandos básicos DDL ( Data Definition Language )
 
-
+---------------------------------------
 Cria uma base de dados.
+
 ```sql
   CREATE DATABASE pessoas;
   
 ```
+
+--------------------------------
  Mostra as bases de dados já criadas.
 ```sql
   SHOW DATABASES;
@@ -70,14 +73,16 @@ CREATE TABLE usuarios(
   password VARCHAR(18)
 );
 ```
-
+---------------------------------
 Mostra as tabelas já criadas.
+
 ```sql
 SHOW TABLES;
 ```
 -------------------------------
 
  Criar dados na tabela.
+ 
 ```sql
 INSERT INTO usuarios(username,password) VALUES(
   "Gustavo Leite", 
@@ -94,13 +99,16 @@ SELECT * FROM tabela WHERE username = gustavo;
 ---------------------------
 
 Deleta dados (NUNCA use um DELETE sem um WHERE)
+
 ```sql
 
 DELETE FROM usuarios WHERE username = gustavo;
 ```
+------------------------------
 
 Atualizar dados
 
 ```sql
 UPDATE usuarios SET nome = "novo nome" WHERE nome = "antigo nome";
 ```
+--------------------------------
